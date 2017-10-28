@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cadastro de Usuário</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+<link href="../css/bootstrap-modificado.css" rel="stylesheet">
+<link href="../css/estilo.css" rel="stylesheet">
+</head>
+
+<body class="CadastroUsuario">
+	<br>
+	<div class="container">
+		<form class="" action="index.html" method="post">
+			<div class="row dadosPessoais">
+				<fieldset>
+					<legend>Dados Pessoais</legend>
+					<div class="form-group col-md-12">
+						<label for="campo1">Nome</label> <input type="text"
+							class="form-control" name="CadastroUsuarioNome"
+							placeholder="Seu nome">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="campo2">CPF</label> <input type="text"
+							class="form-control" id="cpf" name="CadastroUsuarioCpf"
+							placeholder="Seu CPF">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="campo3">RG</label> <input type="text"
+							class="form-control" name="CadastroUsuarioRg"
+							placeholder="Seu RG">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="campo3">Orgão Expeditor</label> <input type="text"
+							class="form-control" name="CadastroUsuarioOrgaoExpeditor"
+							placeholder="Orgão expeditor">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="campo3">Data de Expedição</label> <input type="text"
+							class="form-control data" name="CadastroUsuarioDataExpedicao"
+							placeholder="Expedição do RG">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="campo3">Data de Nascimento</label> <input type="text"
+							class="form-control data" name="CadastroUsuarioDataNascimento"
+							placeholder="Data de Nascimento">
+					</div>
+
+					<div class="form-group col-md-2">
+						<label for="campo3">Sexo</label> <select
+							name="CadastroUsuarioSexo" class="form-control">
+							<option>Selecione</option>
+							<option>Feminino</option>
+							<option>Masculino</option>
+						</select>
+					</div>
+				</fieldset>
+			</div>
+
+			<br>
+			<div class="row dadosEnderecos">
+				<fieldset>
+					<legend>Dados de Endereço</legend>
+					<div class="form-group col-md-4">
+						<label for="campo3">Estado</label> <select
+							name="CadastroUsuarioEstado" class="form-control">
+							<option>Selecione</option>
+							<option value="ac">Acre</option>
+							<option value="al">Alagoas</option>
+							<option value="am">Amazonas</option>
+							<option value="ap">Amapá</option>
+							<option value="ba">Bahia</option>
+							<option value="ce">Ceará</option>
+							<option value="df">Distrito Federal</option>
+							<option value="es">Espírito Santo</option>
+							<option value="go">Goiás</option>
+							<option value="ma">Maranhão</option>
+							<option value="mt">Mato Grosso</option>
+							<option value="ms">Mato Grosso do Sul</option>
+							<option value="mg">Minas Gerais</option>
+							<option value="pa">Pará</option>
+							<option value="pb">Paraíba</option>
+							<option value="pr">Paraná</option>
+							<option value="pe">Pernambuco</option>
+							<option value="pi">Piauí</option>
+							<option value="rj">Rio de Janeiro</option>
+							<option value="rn">Rio Grande do Norte</option>
+							<option value="ro">Rondônia</option>
+							<option value="rs">Rio Grande do Sul</option>
+							<option value="rr">Roraima</option>
+							<option value="sc">Santa Catarina</option>
+							<option value="se">Sergipe</option>
+							<option value="sp">São Paulo</option>
+							<option value="to">Tocantins</option>
+						</select>
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo1">Cidade</label> <input type="text"
+							class="form-control" name="CadastroUsuarioCidade"
+							placeholder="Sua cidade">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo2">Bairro</label> <input type="text"
+							class="form-control" name="CadastroUsuarioBairro"
+							placeholder="Seu bairro">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo3">Rua</label> <input type="text"
+							class="form-control" name="CadastroUsuarioRua"
+							placeholder="Sua rua">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo3">Número</label> <input type="text"
+							class="form-control" name="CadastroUsuarioNumero"
+							placeholder="Seu numero">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo3">Complemento</label> <input type="text"
+							class="form-control" name="CadastroUsuarioComplemento"
+							placeholder="Ex : Casa">
+					</div>
+				</fieldset>
+			</div>
+
+			<br>
+			<div class="row dadosLogin">
+				<fieldset>
+					<legend>Dados de login</legend>
+					<div class="form-group col-md-12">
+						<label for="campo1">E-mail</label> <input type="email"
+							class="form-control" name="CadastroUsuarioEmail"
+							placeholder="Seu e-mail">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo1">Currículo lattes</label> <input type="text"
+							class="form-control" name="CadastroUsuarioCurriculo"
+							placeholder="Seu currículo lattes">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo2">Telefone</label> <input type="text"
+							class="form-control" id="telefone" name="CadastroUsuarioTelefone"
+							placeholder="Seu telefone">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="campo3">Celular</label> <input type="text"
+							class="form-control" id="celular" name="CadastroUsuarioCelular"
+							placeholder="Seu celular">
+					</div>
+				</fieldset>
+			</div>
+
+			<br>
+			<div class="row">
+				<div class="form-inline botaoesCadastro">
+					<button type="submit" class="btn btn-success">Concluir
+						Cadastro</button>
+					<button type="reset" class="btn btn-success">Limpar</button>
+					<button type="button" class="btn btn-success">Cancelar</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<br>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/jquery.maskedinput.js" type="text/javascript"></script>
+	<script src="../js/script.js" type="text/javascript"></script>
+</body>
+</html>
